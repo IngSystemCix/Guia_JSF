@@ -14,3 +14,29 @@ To work with JavaServer Faces (JSF) in XHTML files, it is important to know and 
 
 ## Estructura de un proyecto base
 
+## Initial configurations
+
+> [!IMPORTANT]  
+> You must modify these parts of the `pom.xml`
+
+```xml
+<properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.target>17</maven.compiler.target>
+    <maven.compiler.source>17</maven.compiler.source>
+    <junit.version>5.10.0</junit.version>
+</properties>
+```
+
+```xml
+<build>
+    <finalName>demo</finalName>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.4.0</version>
+        </plugin>
+    </plugins>
+</build>
+```
