@@ -1,4 +1,4 @@
-# Crear componentes en JSF
+# Creating components in JSF
 
 > We need to create a file called `head.xhtml` in order to create this component and include it in `index.xhtml`
 
