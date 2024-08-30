@@ -40,3 +40,15 @@ To work with JavaServer Faces (JSF) in XHTML files, it is important to know and 
     </plugins>
 </build>
 ```
+
+> [!IMPORTANT]  
+> It is important to add the following dependency for JSF in the `pom.xml`
+
+```xml
+<!-- https://mvnrepository.com/artifact/jakarta.faces/jakarta.faces-api -->
+<dependency>
+    <groupId>jakarta.faces</groupId>
+    <artifactId>jakarta.faces-api</artifactId>
+    <version>4.1.0</version>
+</dependency>
+```
