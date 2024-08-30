@@ -114,3 +114,5 @@ To work with JavaServer Faces (JSF) in XHTML files, it is important to know and 
 </f:view>
 </html>
 ```
+
+[**Next step:** Creating components](/component.md)
