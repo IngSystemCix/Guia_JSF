@@ -1,5 +1,6 @@
-# Guia JSF
+# JSF Guide
 To work with JavaServer Faces (JSF) in XHTML files, it is important to know and understand a variety of tags that will allow you to create dynamic and server-linked user interfaces.
+
 # Steps to create a Jakarta EE project
 
 > [!NOTE]
@@ -49,8 +50,33 @@ To work with JavaServer Faces (JSF) in XHTML files, it is important to know and 
 ```xml
 <!-- https://mvnrepository.com/artifact/jakarta.faces/jakarta.faces-api -->
 <dependency>
-    <groupId>jakarta.faces</groupId>
-    <artifactId>jakarta.faces-api</artifactId>
-    <version>4.1.0</version>
+  <groupId>jakarta.faces</groupId>
+  <artifactId>jakarta.faces-api</artifactId>
+  <version>4.1.0</version>
 </dependency>
+```
+
+> [!IMPORTANT]  
+> In the `web.xml` file, we must place the following
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    <servlet>
+        <servlet-name>Faces Servlet</servlet-name>
+        <servlet-class>jakarta.faces.webapp.FacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>*.xhtml</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>/pages/**/*.xhtml</welcome-file>
+    </welcome-file-list>
+</web-app>
 ```
