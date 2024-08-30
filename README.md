@@ -7,5 +7,10 @@ To work with JavaServer Faces (JSF) in XHTML files, it is important to know and 
 
 <img src="assets/readme_step_1.png"/>
 
+> [!NOTE]
+> We must choose these basic options for an initial project.
+
+<img src="assets/readme_step_2.png"/>
+
 ## Estructura de un proyecto base
 
