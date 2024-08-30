@@ -80,3 +80,37 @@ To work with JavaServer Faces (JSF) in XHTML files, it is important to know and 
     </welcome-file-list>
 </web-app>
 ```
+
+> [!IMPORTANT]
+> The structure of a `*.xhtml` is as follows
+
+```xhtml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="author" content="IngSystemCix"/>
+        <meta name="description" content="JSF"/>
+        <meta name="keywords" content="JSF, JavaServer Faces"/>
+        <title>JSF</title>
+    </h:head>
+    <h:body>
+        <header>
+            
+        </header>
+        <main>
+            
+        </main>
+        <footer>
+            
+        </footer>
+    </h:body>
+</f:view>
+</html>
+```
