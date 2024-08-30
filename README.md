@@ -12,7 +12,9 @@ To work with JavaServer Faces (JSF) in XHTML files, it is important to know and 
 
 <img src="assets/readme_step_2.png"/>
 
-## Estructura de un proyecto base
+## Structure of a base project
+
+<img src="assets/readme_step_3.png"/>
 
 ## Initial configurations
 
